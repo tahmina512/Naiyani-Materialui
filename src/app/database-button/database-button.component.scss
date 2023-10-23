@@ -20,8 +20,13 @@
   width: 46px;
   height: 46px;
   background-color: white;
-  border: solid 2px;
+  border: solid 2px black;
   animation: appearButtons 2.5s ease forwards;
+  box-shadow: none;
+}
+.hover-effect:hover {
+  // box-shadow: none;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 }
 .large-icon {
   font-size: 2em;
