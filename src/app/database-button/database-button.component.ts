@@ -7,9 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./database-button.component.scss'],
 })
 export class DatabaseButtonComponent {
-  constructor(private router: Router){}
-  onBack()
-  {
-   this.router.navigate(['/']);
+  constructor(private router: Router) {}
+  onPreviousPage() {
+    this.router.navigate(['/']);
+  }
+  onNextPage() {
+    this.router.navigate(['/database-list']);
   }
 }

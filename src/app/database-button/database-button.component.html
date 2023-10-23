@@ -1,6 +1,6 @@
 <div class="banner-container">
   <div>
-    <button  class="arrow-position" (click)="onBack()">
+    <button  class="arrow-position" (click)="onPreviousPage()">
    <!-- <mat-icon  class="large-icon">arrow_back</mat-icon> -->
   <svg fill="none" height="30" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
 <path clip-rule="evenodd" d="M8.29289 5.29289C8.68342 4.90237 9.31658 4.90237 9.70711 5.29289C10.0976 5.68342 10.0976 6.31658 9.70711 
@@ -57,7 +57,7 @@
   </div>
   <div class="text-position"><span>Hello, Username</span></div>
   <div class="banner-container">
-       <button mat-raised-button class="banner-button">DATABASE</button>
+       <button mat-raised-button class="banner-button" (click)="onNextPage()">DATABASE</button>
 
     
   </div>
