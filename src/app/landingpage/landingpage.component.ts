@@ -22,8 +22,8 @@ export class LandingpageComponent implements OnInit {
   usernameValue: string = '';
   passwordValue: string = '';
 
-  @ViewChild('usernameInput') usernameInput: ElementRef;
-  @ViewChild('passwordInput') passwordInput: ElementRef;
+  @ViewChild('usernameInput', { static: false }) usernameInput: ElementRef;
+  @ViewChild('passwordInput', { static: false }) passwordInput: ElementRef;
   ngOnInit(): void {
     setTimeout(() => {
       this.showDiv = true;
@@ -43,16 +43,15 @@ export class LandingpageComponent implements OnInit {
     //   this.router.navigate(['/database-btn']);
     // }, 21000);
   }
+  login() {
+    console.log('Login function called');
+
+    this.router.navigate(['/database-btn']);
+  }
   showUserBox(inputType: string) {
     if (inputType === 'username') {
       this.isUserVisible = true;
     }
-    //   setTimeout(() => {
-    //     if (this.usernameInput && this.usernameInput.nativeElement) {
-    //       this.usernameInput.nativeElement.focus();
-    //     }
-    //   });
-    // }
 
     setTimeout(() => {
       this.usernameInput.nativeElement.focus();
@@ -80,11 +79,5 @@ export class LandingpageComponent implements OnInit {
         this.isPasswordVisible = false; // Hide the input box
       }
     }
-  }
-  submitSomething() {
-    console.log('hello tisha');
-  }
-  onSubmit() {
-    this.router.navigate(['/database-btn']);
   }
 }

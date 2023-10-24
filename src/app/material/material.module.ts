@@ -3,13 +3,18 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
-
+import { MatMenuModule } from '@angular/material/menu';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 const MaterialComponents = [
   MatSlideToggleModule,
   MatButtonModule,
   MatButtonToggleModule,
   MatIconModule,
+  MatMenuModule,
+  MatFormFieldModule,
+  MatInputModule,
 ];
 
 @NgModule({
