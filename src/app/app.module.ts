@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app.routing.module';
 import { DatabaseButtonComponent } from './database-button/database-button.component';
 import { DatabaseListComponent } from './database-list/database-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MaterialFormComponent } from './material-form/material-form.component';
 @NgModule({
   declarations: [
     AppComponent,
     LandingpageComponent,
     DatabaseButtonComponent,
     DatabaseListComponent,
+    MaterialFormComponent,
   ],
   imports: [
     BrowserModule,

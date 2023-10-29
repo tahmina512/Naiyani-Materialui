@@ -13,7 +13,7 @@
     </div>
 
     <div class="position" *ngIf="showIcons">
-      <form (ngSubmit)="login()">
+      <form #ngForm="ngForm" (ngSubmit)="login()">
         <div class="input-container" [ngClass]="{ 'show-icons': showIcons }">
           <div
             class="gradient-button"

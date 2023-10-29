@@ -1,3 +1,10 @@
+.banner-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .text-position {
   position: absolute;
   top: 70px;
@@ -5,7 +12,7 @@
   font-family: "Calibri-Bold", sans-serif;
   font-size: 26px;
   letter-spacing: 1px;
-  animation: appearButtons 2.5s ease forwards;
+  animation: appearButtons 3s ease forwards;
 }
 .arrow-position {
   position: absolute;
@@ -16,57 +23,58 @@
   left: 15px;
   cursor: pointer;
   border-radius: 50%;
-  width: 45px;
-  height: 45px;
+  width: 47px;
+  height: 47px;
   background-color: white;
-  border: solid 2px;
-  animation: appearButtons 2.5s ease forwards;
+  border: solid 2px black;
+  animation: appearButtons 3s ease forwards;
+  box-shadow: none;
 }
-
+.hover-effect:hover {
+  // box-shadow: none;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
 .filter-icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
 
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 15px;
   height: 52px;
   width: 52px;
- color: white;
+
   border-radius: 50%;
   border: none;
   padding: 7px 5px;
   cursor: pointer;
   background-color: #595959;
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   animation: appearButtons 3s ease forwards;
 }
-.banner-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
 
-  .banner-button {
-    background-color: white;
-    margin-top: 120px;
-    padding: 0;
-    text-align: center;
-    height: 60px;
-    width: 220px;
-    border: 2px solid;
-    border-radius: 50px;
-    cursor: pointer;
-    font-family: "Calibri-Bold", sans-serif;
-    font-weight: 400;
-    line-height: 1;
-    font-size: 28px;
-    white-space: normal; /* Allow text to wrap */
-  }
+.banner-button {
+  // background-color: white;
+  margin-top: 120px;
+  padding: 0;
+  text-align: center;
+  height: 60px;
+  width: 220px;
+  border: 2px solid;
+  border-radius: 50px;
+  font-family: "Calibri-Bold", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 28px;
+  white-space: normal; /* Allow text to wrap */
+  box-shadow: none !important;
+  pointer-events: none;
+  animation: appearButtons 3s ease forwards;
+}
 
-  animation: appearButtons 2.5s ease forwards;
+.banner-button:hover {
+  background-color: white !important; /* Change to white when hovered */
 }
 
 @keyframes appearButtons {
@@ -123,7 +131,6 @@
   }
   .banner-button {
     font-size: 26px;
-    line-height: 1;
   }
   .grid-container {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */

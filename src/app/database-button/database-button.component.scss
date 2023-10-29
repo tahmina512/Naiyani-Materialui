@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
 
-  height: 100vh;
+  height: 100%;
   //  background-color: red;
   animation: appearButtons 3s ease forwards;
 }
@@ -17,8 +17,8 @@
   left: 15px;
   cursor: pointer;
   border-radius: 50%;
-  width: 46px;
-  height: 46px;
+  width: 47px;
+  height: 47px;
   background-color: white;
   border: solid 2px black;
   animation: appearButtons 2.5s ease forwards;
