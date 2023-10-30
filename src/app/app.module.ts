@@ -9,6 +9,7 @@ import { DatabaseButtonComponent } from './database-button/database-button.compo
 import { DatabaseListComponent } from './database-list/database-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialFormComponent } from './material-form/material-form.component';
+import { DatabaseTableComponent } from './database-table/database-table.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +17,7 @@ import { MaterialFormComponent } from './material-form/material-form.component';
     DatabaseButtonComponent,
     DatabaseListComponent,
     MaterialFormComponent,
+    DatabaseTableComponent,
   ],
   imports: [
     BrowserModule,

@@ -16,4 +16,7 @@ export class DatabaseListComponent implements OnInit {
   onPreviousPage() {
     this.router.navigate(['/database-btn']);
   }
+  bookSection() {
+    this.router.navigate(['/database-table']);
+  }
 }
